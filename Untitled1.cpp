@@ -10,7 +10,7 @@ int main(){
 			scanf("%d",&shu[i][j]);
 		}
 	}
-	for(int i=n-1;i>=0;i--)
+	for(int i=n-1;i>0;i-=2)
 	{
 		m=0;
 		for(int j=1;j<=i;j++)
