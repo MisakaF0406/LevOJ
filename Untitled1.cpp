@@ -12,6 +12,10 @@ int main(){
 	}
 	for(int i=n-1;i>0;i-=2)
 	{
+		if(i<=2)
+		{
+			min+=shu[1][1];
+		}
 		m=0;
 		for(int j=1;j<=i;j++)
 		{
@@ -34,10 +38,9 @@ int main(){
 				}
 			}
 		}
-		printf("%d",mint[0]);
 		min1=mint[0];
 		min+=min1;
 	}
-	printf("\n%d",min);
+	printf("%d",min);
 	return 0;
 }
